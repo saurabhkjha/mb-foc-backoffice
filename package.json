@@ -1,0 +1,28 @@
+{
+  "name": "react",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "7.18.13",
+    "@emotion/react": "11.10.0",
+    "@emotion/styled": "11.10.0",
+    "@material-ui/core": "^4.12.4",
+    "@mui/icons-material": "5.10.2",
+    "@mui/material": "5.10.2",
+    "@types/react": "18.0.17",
+    "ag-grid-community": "28.0.2",
+    "ag-grid-react": "28.0.0",
+    "prop-types": "15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  }
+}

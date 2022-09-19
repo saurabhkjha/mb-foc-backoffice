@@ -1,0 +1,702 @@
+[
+  {
+    "userId": "AKM1MP6P0OYPR",
+    "productId": 132793040,
+    "rating": 5,
+    "time": 1365811200,
+    "id": "ef4b6ac3-6607-4115-b565-bee4630ae379"
+  },
+  {
+    "userId": "A2CX7LUOHB2NDG",
+    "productId": 321732944,
+    "rating": 5,
+    "time": 1341100800,
+    "id": "6220b410-d594-4a3e-8a6d-8783f3faa0d9"
+  },
+  {
+    "userId": "A2NWSAGRHCP8N5",
+    "productId": 439886341,
+    "rating": 1,
+    "time": 1367193600,
+    "id": "3abcdc12-6c2e-4e3b-ad8c-6141d65d25bc"
+  },
+  {
+    "userId": "A2WNBOD3WNDNKT",
+    "productId": 439886341,
+    "rating": 3,
+    "time": 1374451200,
+    "id": "66c4b8bd-65b5-4620-b610-207c353123db"
+  },
+  {
+    "userId": "A1GI0U4ZRJA8WN",
+    "productId": 439886341,
+    "rating": 1,
+    "time": 1334707200,
+    "id": "dde1926e-553e-4232-8095-5e0f145fa02a"
+  },
+  {
+    "userId": "A1QGNMC6O1VW39",
+    "productId": 511189877,
+    "rating": 5,
+    "time": 1397433600,
+    "id": "9ecf10d2-1968-400c-a23a-1380296b3590"
+  },
+  {
+    "userId": "A3J3BRHTDRFJ2G",
+    "productId": 511189877,
+    "rating": 2,
+    "time": 1397433600,
+    "id": "63250032-03ef-45b5-b835-38954cae81a2"
+  },
+  {
+    "userId": "A2TY0BTJOTENPG",
+    "productId": 511189877,
+    "rating": 5,
+    "time": 1395878400,
+    "id": "9fe7ba09-4b65-4be1-a032-c3625030479d"
+  },
+  {
+    "userId": "A34ATBPOK6HCHY",
+    "productId": 511189877,
+    "rating": 5,
+    "time": 1395532800,
+    "id": "dc972c3c-7d93-4564-891d-c134ced78864"
+  },
+  {
+    "userId": "A89DO69P0XZ27",
+    "productId": 511189877,
+    "rating": 5,
+    "time": 1395446400,
+    "id": "db736c95-1493-477a-a8e8-2891ba75e2ab"
+  },
+  {
+    "userId": "AZYNQZ94U6VDB",
+    "productId": 511189877,
+    "rating": 5,
+    "time": 1401321600,
+    "id": "ae52d6ef-d458-4211-ac03-34cfa343fbcf"
+  },
+  {
+    "userId": "A1DA3W4GTFXP6O",
+    "productId": 528881469,
+    "rating": 5,
+    "time": 1405641600,
+    "id": "e0bfd19e-be2c-438a-af54-826e1ee80fc4"
+  },
+  {
+    "userId": "A29LPQQDG7LD5J",
+    "productId": 528881469,
+    "rating": 1,
+    "time": 1352073600,
+    "id": "bca9423b-123b-40a9-829d-1bdc8a96c1bd"
+  },
+  {
+    "userId": "AO94DHGC771SJ",
+    "productId": 528881469,
+    "rating": 5,
+    "time": 1370131200,
+    "id": "27776c68-a08e-46ca-bd6c-12f35e24a36e"
+  },
+  {
+    "userId": "AMO214LNFCEI4",
+    "productId": 528881469,
+    "rating": 1,
+    "time": 1290643200,
+    "id": "eae6f0bf-be6a-44d2-bfd0-e5a1feff6ba2"
+  },
+  {
+    "userId": "A28B1G1MSJ6OO1",
+    "productId": 528881469,
+    "rating": 4,
+    "time": 1280016000,
+    "id": "30628949-243e-4efe-b97b-c41727a44eb6"
+  },
+  {
+    "userId": "A3N7T0DY83Y4IG",
+    "productId": 528881469,
+    "rating": 3,
+    "time": 1283990400,
+    "id": "9e39443f-e1e8-48c1-9f9b-d264ec4a32d8"
+  },
+  {
+    "userId": "A1H8PY3QHMQQA0",
+    "productId": 528881469,
+    "rating": 2,
+    "time": 1290556800,
+    "id": "99897902-aac1-4f02-8edb-8bff5cf57063"
+  },
+  {
+    "userId": "A2CPBQ5W4OGBX",
+    "productId": 528881469,
+    "rating": 2,
+    "time": 1277078400,
+    "id": "34e7b682-3b59-403e-9abd-9753e494f658"
+  },
+  {
+    "userId": "A265MKAR2WEH3Y",
+    "productId": 528881469,
+    "rating": 4,
+    "time": 1294790400,
+    "id": "61cc2db4-b3fe-45a5-91f5-3dd77eeff02c"
+  },
+  {
+    "userId": "A37K02NKUIT68K",
+    "productId": 528881469,
+    "rating": 5,
+    "time": 1293235200,
+    "id": "3498ccaf-20a6-4d5b-aeaa-0c60fbf31ae1"
+  },
+  {
+    "userId": "A2AW1SSVUIYV9Y",
+    "productId": 528881469,
+    "rating": 4,
+    "time": 1289001600,
+    "id": "61a7a0f5-8be9-451c-877e-943ca37fe1cd"
+  },
+  {
+    "userId": "A2AEHUKOV014BP",
+    "productId": 528881469,
+    "rating": 5,
+    "time": 1284249600,
+    "id": "6c6b7340-43c8-430e-9b49-d01d5fe823aa"
+  },
+  {
+    "userId": "AMLFNXUIEMN4T",
+    "productId": 528881469,
+    "rating": 1,
+    "time": 1307836800,
+    "id": "34c3da76-f522-454f-893b-a4135efe8356"
+  },
+  {
+    "userId": "A2O8FIJR9EBU56",
+    "productId": 528881469,
+    "rating": 4,
+    "time": 1278547200,
+    "id": "1d10138a-43a7-4093-b183-18c3fa82a67c"
+  },
+  {
+    "userId": "A3IQGFB959IR4P",
+    "productId": 528881469,
+    "rating": 1,
+    "time": 1327363200,
+    "id": "4fc69233-aa40-4bf6-bae3-d061bcdd2190"
+  },
+  {
+    "userId": "AYTBGUX49LF3W",
+    "productId": 528881469,
+    "rating": 4,
+    "time": 1398470400,
+    "id": "c8ef56a8-783e-45f4-b81b-acaf7df67bb6"
+  },
+  {
+    "userId": "A24QFSUU00IZ05",
+    "productId": 528881469,
+    "rating": 2,
+    "time": 1293580800,
+    "id": "3b33985b-e598-4243-a15a-b05e0d253ca8"
+  },
+  {
+    "userId": "A1NG5X8VYZWX0Q",
+    "productId": 528881469,
+    "rating": 1,
+    "time": 1286582400,
+    "id": "72f32297-9af0-43b9-a77f-db5c88ecb804"
+  },
+  {
+    "userId": "A1E4WG8HRWWK4R",
+    "productId": 528881469,
+    "rating": 5,
+    "time": 1390867200,
+    "id": "29f93fbf-3694-4ecd-8558-48584244b8b6"
+  },
+  {
+    "userId": "A2AOEW5UGXFOOQ",
+    "productId": 528881469,
+    "rating": 5,
+    "time": 1294790400,
+    "id": "e38cf22d-8406-4cb3-adf8-852daef5e77a"
+  },
+  {
+    "userId": "A2XSWV6AQI90BR",
+    "productId": 528881469,
+    "rating": 1,
+    "time": 1299974400,
+    "id": "4fd9327e-5b07-47e1-9505-93cede14c7de"
+  },
+  {
+    "userId": "AR84FMFYCQCWF",
+    "productId": 528881469,
+    "rating": 1,
+    "time": 1296691200,
+    "id": "b31ba9a5-f5c4-446b-935a-d31f702c4a2c"
+  },
+  {
+    "userId": "A19TBA1WARJS55",
+    "productId": 528881469,
+    "rating": 2,
+    "time": 1340496000,
+    "id": "1f9a874f-4000-42c8-bcfb-ae626c9350df"
+  },
+  {
+    "userId": "A3C5SMBSKKWNPT",
+    "productId": 528881469,
+    "rating": 5,
+    "time": 1285113600,
+    "id": "a9f26b72-f0ce-4eb5-850d-5aeb4a405fa6"
+  },
+  {
+    "userId": "A24EV6RXELQZ63",
+    "productId": 528881469,
+    "rating": 1,
+    "time": 1317254400,
+    "id": "5e377063-d4e4-488a-a321-b1966ac8f1d8"
+  },
+  {
+    "userId": "A3T6ZQONABIJSG",
+    "productId": 528881469,
+    "rating": 1,
+    "time": 1358035200,
+    "id": "b74e2a78-793c-4b8c-a2ac-401d15b1294a"
+  },
+  {
+    "userId": "A132P6YSJSI5G2",
+    "productId": 528881469,
+    "rating": 2,
+    "time": 1298851200,
+    "id": "4dadd3a2-30ac-4028-9a89-b2cb6642a5f5"
+  },
+  {
+    "userId": "A1NQPG5IJ43HJI",
+    "productId": 558835155,
+    "rating": 3,
+    "time": 1372550400,
+    "id": "96a92c7d-5735-4c59-b05d-ec97c5686a52"
+  },
+  {
+    "userId": "A2WOJCFAWI8VS8",
+    "productId": "059400232X",
+    "rating": 5,
+    "time": 1379376000,
+    "id": "9f190a58-1cce-4883-a698-29246d022e51"
+  },
+  {
+    "userId": "A22FB2WSZSXSHH",
+    "productId": "059400232X",
+    "rating": 5,
+    "time": 1348790400,
+    "id": "03fc3c4d-3979-4d3d-b770-027fe34ce0aa"
+  },
+  {
+    "userId": "AZQZ3STMCBG5H",
+    "productId": "059400232X",
+    "rating": 5,
+    "time": 1395705600,
+    "id": "347b3371-49c0-41f2-bc49-6fd1e971049d"
+  },
+  {
+    "userId": "A2EGPA22UHMQXL",
+    "productId": 594012015,
+    "rating": 1,
+    "time": 1405296000,
+    "id": "7b20a343-9c21-47ab-a990-32b7ed3e569b"
+  },
+  {
+    "userId": "AC57CU3TF6ZMJ",
+    "productId": 594012015,
+    "rating": 5,
+    "time": 1404172800,
+    "id": "a1d2f589-2a01-46f8-99fa-c5c62f655592"
+  },
+  {
+    "userId": "A2YX0Z6RHA8Y2H",
+    "productId": 594012015,
+    "rating": 1,
+    "time": 1384300800,
+    "id": "30f20d18-f2fc-48ae-aaf4-1db498574e58"
+  },
+  {
+    "userId": "A38T51B7J6QVD9",
+    "productId": 594012015,
+    "rating": 1,
+    "time": 1377129600,
+    "id": "8ec776f8-005a-4e62-8afa-a5c730e4f3f1"
+  },
+  {
+    "userId": "A1HOSS7PNC1LMU",
+    "productId": 594012015,
+    "rating": 1,
+    "time": 1374537600,
+    "id": "a238c105-810a-4529-835c-2943883a9b50"
+  },
+  {
+    "userId": "A9HI77BE35VYE",
+    "productId": 594012015,
+    "rating": 1,
+    "time": 1373932800,
+    "id": "95e7fd44-2a25-4e76-bc12-5ec8017f595e"
+  },
+  {
+    "userId": "A3HFUWKSPF5QEH",
+    "productId": 594012015,
+    "rating": 5,
+    "time": 1374278400,
+    "id": "62e94605-6a05-43c6-b4c8-2b6414dad050"
+  },
+  {
+    "userId": "A38ETMHM9ATSF0",
+    "productId": 594012015,
+    "rating": 1,
+    "time": 1374105600,
+    "id": "3a7941cd-2b08-4cb9-b17c-ccfb767ea819"
+  },
+  {
+    "userId": "A34O6MND17VDDH",
+    "productId": 594017343,
+    "rating": 1,
+    "time": 1323216000,
+    "id": "5f276222-4026-4dde-9ea3-7cb2b742bb3c"
+  },
+  {
+    "userId": "A3JSAGWSLY5044",
+    "productId": 594017580,
+    "rating": 3,
+    "time": 1404432000,
+    "id": "3eb50cf3-2e03-41af-b657-60d13e21ea55"
+  },
+  {
+    "userId": "A3B12X05JZKM94",
+    "productId": 594033896,
+    "rating": 5,
+    "time": 1405382400,
+    "id": "d2929772-1901-4519-a3df-9594a9ec72bb"
+  },
+  {
+    "userId": "AKZOMZCNU41GZ",
+    "productId": 594033896,
+    "rating": 4,
+    "time": 1388620800,
+    "id": "d9e52219-4bdf-4573-af5f-e284996d4fda"
+  },
+  {
+    "userId": "A2XTFY0GJDF3R2",
+    "productId": 594033896,
+    "rating": 4,
+    "time": 1300233600,
+    "id": "6aa7eaf7-b7fc-44d2-bacb-738c1fa4f8e3"
+  },
+  {
+    "userId": "A3ILG56NE5QU37",
+    "productId": 594033896,
+    "rating": 5,
+    "time": 1399420800,
+    "id": "51cd98f1-d5ad-4ded-a6d0-c8c2ed8a21b2"
+  },
+  {
+    "userId": "AOK77THMKCGXZ",
+    "productId": 594033896,
+    "rating": 4,
+    "time": 1394496000,
+    "id": "1c334384-539b-4c61-9ddf-e0d3a99df4be"
+  },
+  {
+    "userId": "A24RBL3W5W6SAN",
+    "productId": 594033926,
+    "rating": 5,
+    "time": 1392422400,
+    "id": "5f49fa54-4fb6-4655-b63a-d233c68f0fe3"
+  },
+  {
+    "userId": "A2RX85Y4S27N2J",
+    "productId": 594033926,
+    "rating": 1,
+    "time": 1397865600,
+    "id": "4b365f44-4aac-477a-92b3-e5b643420e98"
+  },
+  {
+    "userId": "A253JJFXQNPCOJ",
+    "productId": 594033926,
+    "rating": 4,
+    "time": 1387584000,
+    "id": "f9ed9120-f857-41ac-be71-9e23e8ec5f42"
+  },
+  {
+    "userId": "AHYURLVH267MA",
+    "productId": 594033926,
+    "rating": 5,
+    "time": 1389225600,
+    "id": "b2de427e-bc71-4945-b949-3e4bda2c629b"
+  },
+  {
+    "userId": "A1FXYTO11KEJ2P",
+    "productId": 594033926,
+    "rating": 4,
+    "time": 1398297600,
+    "id": "03353e36-d97a-4f31-9395-7c51c7ee6e22"
+  },
+  {
+    "userId": "A2TKKYL3GKFS2M",
+    "productId": 594033926,
+    "rating": 5,
+    "time": 1388102400,
+    "id": "81990076-4d88-4614-a9db-22c68fbe47ea"
+  },
+  {
+    "userId": "A3F069UFW04K1E",
+    "productId": 594033926,
+    "rating": 5,
+    "time": 1392249600,
+    "id": "bab39e09-8f35-40e8-9a60-99462d119a3d"
+  },
+  {
+    "userId": "A3HQ8RXUMJ2Y58",
+    "productId": 594033926,
+    "rating": 5,
+    "time": 1400976000,
+    "id": "4189dc0e-d875-4433-8aeb-8792578a94f0"
+  },
+  {
+    "userId": "A2MNKBHPMBB0EA",
+    "productId": 594033926,
+    "rating": 5,
+    "time": 1390003200,
+    "id": "d2bb0478-bc39-4e00-b1d2-387659f41702"
+  },
+  {
+    "userId": "A3HGTTFIDLCWDJ",
+    "productId": 594033926,
+    "rating": 4,
+    "time": 1396483200,
+    "id": "0da69148-7985-434c-8f72-d9dc77d5fc7d"
+  },
+  {
+    "userId": "AYM7NJTTX3M0L",
+    "productId": 594033926,
+    "rating": 5,
+    "time": 1393200000,
+    "id": "f33963fd-12b0-45fb-a789-089a0d408d92"
+  },
+  {
+    "userId": "A2PL24SVISXZM9",
+    "productId": 594033926,
+    "rating": 5,
+    "time": 1392422400,
+    "id": "5885e60d-d9d1-4aa8-91ea-892acb071367"
+  },
+  {
+    "userId": "A3I1C8WM8DLSMM",
+    "productId": 594033926,
+    "rating": 5,
+    "time": 1395964800,
+    "id": "9a701015-d7b4-4dbf-9cba-b73367b7fdde"
+  },
+  {
+    "userId": "A29LNVZLBG0IYN",
+    "productId": 594033926,
+    "rating": 5,
+    "time": 1402876800,
+    "id": "b58bb9d7-2a7a-4879-a3d6-8fe6210ac222"
+  },
+  {
+    "userId": "A2CP4GY6XAWIII",
+    "productId": 594033926,
+    "rating": 5,
+    "time": 1403568000,
+    "id": "934bf7dc-c04f-416f-93b7-59dd02fd422f"
+  },
+  {
+    "userId": "A1UMFN4RKU451R",
+    "productId": 594033934,
+    "rating": 5,
+    "time": 1359244800,
+    "id": "6f60da45-fe12-498e-8a3b-85ecd779d063"
+  },
+  {
+    "userId": "A3T3XKC7H5ACI1",
+    "productId": 594033934,
+    "rating": 5,
+    "time": 1401235200,
+    "id": "a40f9470-bf5a-4eea-8a8e-2b71b36b2655"
+  },
+  {
+    "userId": "A1NQNJ3EAZ6CMZ",
+    "productId": 594202442,
+    "rating": 4,
+    "time": 1360108800,
+    "id": "4189e349-3952-4888-aa3d-d172ff801fdb"
+  },
+  {
+    "userId": "A34TPQUVSQXXPX",
+    "productId": 594287995,
+    "rating": 5,
+    "time": 1380672000,
+    "id": "e78de36d-8ae2-4fce-9311-37246d0092b4"
+  },
+  {
+    "userId": "A2B4F6LP0ZLI8E",
+    "productId": 594296420,
+    "rating": 3,
+    "time": 1398556800,
+    "id": "13b32df7-c2e5-4c9b-ba61-af41e414caef"
+  },
+  {
+    "userId": "A1RKH6803HVOQL",
+    "productId": 594296420,
+    "rating": 5,
+    "time": 1365379200,
+    "id": "69923470-3b99-453c-9af2-7262abfffebd"
+  },
+  {
+    "userId": "A3ZNVCQCG57AY",
+    "productId": 594296420,
+    "rating": 5,
+    "time": 1359331200,
+    "id": "a42b09db-1d39-49e7-887f-ea948308f8a6"
+  },
+  {
+    "userId": "A1HM74IXWXQ5D8",
+    "productId": 594296420,
+    "rating": 5,
+    "time": 1392854400,
+    "id": "79b87bae-99e9-42c8-9d44-d5937302e4d2"
+  },
+  {
+    "userId": "A2DUI0YVE1DZ48",
+    "productId": 594296420,
+    "rating": 5,
+    "time": 1388016000,
+    "id": "c395ada7-3fb4-42cf-b4e2-5b34d96a8e73"
+  },
+  {
+    "userId": "AH3LYMIBZ6DKF",
+    "productId": 594296420,
+    "rating": 5,
+    "time": 1380672000,
+    "id": "df71fdd0-3212-4612-9c88-75ca3013d1a9"
+  },
+  {
+    "userId": "AWA0CM7TY98QX",
+    "productId": 594450209,
+    "rating": 5,
+    "time": 1382313600,
+    "id": "7c9872ec-e79f-498b-ac0c-8201caddd281"
+  },
+  {
+    "userId": "A244IAP7UBVHH6",
+    "productId": 594450209,
+    "rating": 5,
+    "time": 1389139200,
+    "id": "3e837668-7c58-4c61-b886-3890f2a6801a"
+  },
+  {
+    "userId": "A3E7PG9CHDBICA",
+    "productId": 594450705,
+    "rating": 5,
+    "time": 1403827200,
+    "id": "deaaa0a8-5862-41c8-88ca-fd696dd78d00"
+  },
+  {
+    "userId": "A2JXAZZI9PHK9Z",
+    "productId": 594451647,
+    "rating": 5,
+    "time": 1388707200,
+    "id": "9e937ce0-4b86-4429-9b23-67f87546ce12"
+  },
+  {
+    "userId": "A1RTWWRHVIVWQW",
+    "productId": 594451647,
+    "rating": 5,
+    "time": 1404691200,
+    "id": "0649c058-adf5-488d-a0b2-fbad4b0e3ae0"
+  },
+  {
+    "userId": "A2P5U7BDKKT7FW",
+    "productId": 594451647,
+    "rating": 2,
+    "time": 1398556800,
+    "id": "26cc0ed8-fa20-47bb-8b2b-f21a170564ca"
+  },
+  {
+    "userId": "A262D8GC5XRU31",
+    "productId": 594451647,
+    "rating": 5,
+    "time": 1400025600,
+    "id": "d14a0220-cfe5-433f-bad2-e8613b5de1a5"
+  },
+  {
+    "userId": "AAZ084UMH8VZ2",
+    "productId": 594451647,
+    "rating": 5,
+    "time": 1399161600,
+    "id": "684ed309-c9ca-4279-8102-62802f6db14f"
+  },
+  {
+    "userId": "A3M122DYN9L5N8",
+    "productId": 594451647,
+    "rating": 1,
+    "time": 1388707200,
+    "id": "8a207998-5f1d-4c38-94f0-68934550f6db"
+  },
+  {
+    "userId": "A3S0RV5ZQ37538",
+    "productId": 594451647,
+    "rating": 4,
+    "time": 1399075200,
+    "id": "a48ad89b-5fdd-440a-b622-dc458c03b296"
+  },
+  {
+    "userId": "A150Y5KRN7FWJJ",
+    "productId": 594451647,
+    "rating": 5,
+    "time": 1384646400,
+    "id": "1540c94f-0cc3-48ac-ba39-19eae370399c"
+  },
+  {
+    "userId": "AEZ3CR6BKIROJ",
+    "productId": 594451647,
+    "rating": 4,
+    "time": 1405036800,
+    "id": "2384bd6a-af00-48df-a3a9-5501a5075e18"
+  },
+  {
+    "userId": "A3BY5KCNQZXV5U",
+    "productId": 594451647,
+    "rating": 5,
+    "time": 1390176000,
+    "id": "01c579c9-fefc-4a3b-970b-1f46dd9f426a"
+  },
+  {
+    "userId": "A1JIOBEWHVV8MC",
+    "productId": 594451647,
+    "rating": 5,
+    "time": 1393545600,
+    "id": "c14a2490-5e1c-4d2c-a052-e5fff941099f"
+  },
+  {
+    "userId": "A2OJRZGW5YVGNS",
+    "productId": 594451647,
+    "rating": 5,
+    "time": 1384905600,
+    "id": "ef5cc770-8035-4984-b5b1-1aca387d29bc"
+  },
+  {
+    "userId": "A14KUMEJ094IZ3",
+    "productId": 594451647,
+    "rating": 5,
+    "time": 1396396800,
+    "id": "d2894359-64fc-4c1b-bf16-ca4a1c94d4a2"
+  },
+  {
+    "userId": "A212UCG62RO8JF",
+    "productId": 594451647,
+    "rating": 5,
+    "time": 1389657600,
+    "id": "7cba6598-f316-418e-9cd0-aa1a73f4fb2a"
+  },
+  {
+    "userId": "A18U7ZDE2VHD01",
+    "productId": 594477670,
+    "rating": 5,
+    "time": 1361232000,
+    "id": "4d874b90-a7ba-4247-80e0-86b88550ca48"
+  }
+]
