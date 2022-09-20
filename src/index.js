@@ -1,10 +1,5 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useEffect } from 'react';
 import { render } from 'react-dom';
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import RestoreIcon from '@mui/icons-material/Restore';
@@ -12,7 +7,11 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ArchiveIcon from '@mui/icons-material/Archive';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import LockIcon from '@mui/icons-material/Lock';
+import EditIcon from '@mui/icons-material/Edit';
+import Rating from '@mui/material/Rating';
 import Paper from '@mui/material/Paper';
+
+import { lightBlue, amber, red, blueGrey } from '@mui/material/colors';
 
 import AppBar from '@mui/material/AppBar';
 
@@ -34,13 +33,90 @@ import { API } from './config';
 import reviewData from './data/review';
 import productData from './data/products';
 
+const avg = lightBlue[500];
+const low = amber[300];
+const danger = red[400];
+const disabled = blueGrey[400];
+
+function Editable(props) {
+  let bkColor = avg;
+  if (props.data.available === 0) {
+    bkColor = disabled;
+  } else if (props.value === 0) {
+    bkColor = danger;
+  }
+  return (
+    <span
+      style={{
+        background: bkColor,
+        display: 'flex',
+        justifyContent: 'space-evenly',
+      }}
+    >
+      {props.value}
+      <EditIcon
+        style={{
+          marginTop: '10px',
+          color: props.data.available > 0 ? 'none' : bkColor,
+        }}
+      />
+    </span>
+  );
+}
+
+function MbRating(props) {
+  return (
+    <span>
+      <Rating
+        name="read-only"
+        value={props.value}
+        readOnly
+        style={{ color: '#00ADEF', fontSize:'14px' }}
+      />
+    </span>
+  );
+}
+
+function StockCell(props) {
+  let bkColor = avg;
+  if (props.value === 0) {
+    bkColor = danger;
+  } else if (props.value < 5) {
+    bkColor = low;
+  }
+  return (
+    <span
+      style={{ background: bkColor, display: 'flex', justifyContent: 'center' }}
+    >
+      {props.value}
+    </span>
+  );
+}
+
+function ReviewStatus(props) {
+  let status = 'Not Approved';
+  let bkColor = 'none';
+  if (props.value.toLowerCase() === 'approved') {
+    status = 'Approved';
+    bkColor = '#00ADEF';
+  }
+  return (
+    <span
+      style={{ background: bkColor, display: 'flex', justifyContent: 'center' }}
+    >
+      {status}
+    </span>
+  );
+}
+
 const reviewCol = [
   {
     field: 'id',
     filter: true,
     resizable: true,
     flex: 1,
-    hide: true,
+    width: 100,
+    maxWidth: 100,
   },
   {
     field: 'customerName',
@@ -59,7 +135,8 @@ const reviewCol = [
     filter: true,
     resizable: true,
     flex: 1,
-    width: 10,
+
+    cellRenderer: MbRating,
   },
   {
     field: 'reviewHeadline',
@@ -86,6 +163,7 @@ const reviewCol = [
     filter: true,
     resizable: true,
     flex: 1,
+    cellRenderer: ReviewStatus,
   },
 ];
 const productCol = [
@@ -94,14 +172,14 @@ const productCol = [
     filter: true,
     resizable: true,
     flex: 1,
-    hide: true,
+    width: 100,
+    maxWidth: 100,
   },
   {
     field: 'productCode',
     filter: true,
     resizable: true,
     flex: 1,
-    hide: true,
   },
   {
     field: 'productName',
@@ -134,20 +212,31 @@ const productCol = [
     filter: true,
     resizable: true,
     flex: 1,
+    width: 175,
+    maxWidth: 175,
+    cellRenderer: StockCell,
   },
   {
     field: 'safetyStock',
     filter: true,
     resizable: true,
-    editable: true,
+    editable: (params) => {
+      return params.data.available > 0;
+    },
     flex: 1,
     cellClass: 'editable-grid-cell',
+    cellRenderer: Editable,
+    width: 175,
+    maxWidth: 175,
   },
   {
     field: 'calculatedStock',
     filter: true,
     resizable: true,
     flex: 1,
+    width: 175,
+    maxWidth: 175,
+    cellRenderer: StockCell,
   },
 ];
 const priceCol = [
@@ -156,7 +245,8 @@ const priceCol = [
     filter: true,
     resizable: true,
     flex: 1,
-    hide: true,
+    width: 100,
+    maxWidth: 100,
   },
   {
     field: 'product',
@@ -258,6 +348,7 @@ const App = () => {
   const validate = (val) => {
     setSession(val);
   };
+  const fLCapital = (s) => (s = s.charAt(0).toUpperCase() + s.slice(1));
   return (
     <>
       {session && (
@@ -271,7 +362,7 @@ const App = () => {
                 component="div"
                 style={{ marginLeft: 20 }}
               >
-                MB FOC Backoffice
+                MB FOC Backoffice - {fLCapital(value)}
               </Typography>
             </Toolbar>
           </AppBar>
@@ -293,18 +384,48 @@ const App = () => {
                 onClick={() => refreshData()}
               />
               <BottomNavigationAction
+                style={{
+                  color: value === 'review' ? '#00ADEF' : 'rgba(0, 0, 0, 0.6)',
+                }}
                 label="Review"
-                icon={<FavoriteIcon />}
+                icon={
+                  <FavoriteIcon
+                    style={{
+                      color:
+                        value === 'review' ? '#00ADEF' : 'rgba(0, 0, 0, 0.6)',
+                    }}
+                  />
+                }
                 onClick={() => loadData('review')}
               />
               <BottomNavigationAction
+                style={{
+                  color: value === 'stock' ? '#00ADEF' : 'rgba(0, 0, 0, 0.6)',
+                }}
                 label="Stock"
-                icon={<ArchiveIcon />}
-                onClick={() => loadData('product')}
+                icon={
+                  <ArchiveIcon
+                    style={{
+                      color:
+                        value === 'stock' ? '#00ADEF' : 'rgba(0, 0, 0, 0.6)',
+                    }}
+                  />
+                }
+                onClick={() => loadData('stock')}
               />
               <BottomNavigationAction
+                style={{
+                  color: value === 'price' ? '#00ADEF' : 'rgba(0, 0, 0, 0.6)',
+                }}
                 label="Price"
-                icon={<MonetizationOnIcon />}
+                icon={
+                  <MonetizationOnIcon
+                    style={{
+                      color:
+                        value === 'price' ? '#00ADEF' : 'rgba(0, 0, 0, 0.6)',
+                    }}
+                  />
+                }
                 onClick={() => loadData('price')}
               />
               <BottomNavigationAction

@@ -19,7 +19,7 @@ import '../style.css';
 import useWindowDimensions from '../hooks/dimension';
 
 const myHeaders = new Headers();
-myHeaders.append("Content-Type", "application/json");
+myHeaders.append('Content-Type', 'application/json');
 
 import { API } from '../config';
 function ActionPopover(props) {
@@ -44,10 +44,11 @@ export default function Ag({
 }) {
   const gridRef = useRef();
   const { height, width } = useWindowDimensions();
+
   const onAction = useCallback((id) => {
     var raw = JSON.stringify({
-      "id": id,
-      "status": "approved"
+      id: id,
+      status: 'approved',
     });
     setShowmsg(true);
     setMsg('Processing...');
@@ -55,11 +56,11 @@ export default function Ag({
       method: 'POST',
       headers: myHeaders,
       body: raw,
-      redirect: 'follow'
+      redirect: 'follow',
     };
-    
+
     fetch(`${API}/review/approval/`, requestOptions)
-      .then(response => response.text())
+      .then((response) => response.text())
       .then((result) => {
         setMsg('Done...');
         setTimeout(() => {
@@ -156,6 +157,14 @@ export default function Ag({
     //console.log('cellClicked', API);
   }, []);
   const cellValueChangedListener = useCallback((event) => {
+    if(event.data.safetyStock > event.data.available) {
+      setShowmsg(true);
+      setMsg('Safety Stock can not be bigger then Available Stock');
+      setTimeout(() => {
+        setShowmsg(false);
+        refersh();
+      }, 2000);
+    } else {
     const raw = JSON.stringify({
       id: event.data.id,
       safetyStock: event.data.safetyStock,
@@ -179,6 +188,7 @@ export default function Ag({
         }, 200);
       })
       .catch((error) => console.log('error', error));
+    }
   }, []);
 
   return (
