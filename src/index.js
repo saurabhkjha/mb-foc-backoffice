@@ -96,7 +96,7 @@ function StockCell(props) {
 function ReviewStatus(props) {
   let status = 'Not Approved';
   let bkColor = 'none';
-  if (props.value.toLowerCase() === 'approved') {
+  if (props.value && props.value.toLowerCase() === 'approved') {
     status = 'Approved';
     bkColor = '#00ADEF';
   }
