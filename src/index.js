@@ -57,7 +57,7 @@ function Editable(props) {
       <EditIcon
         style={{
           marginTop: '10px',
-          color: props.data.available > 0 ? 'none' : bkColor,
+          color: (props.data.available > 0 || props.data.price > 0)? 'none' : bkColor,
         }}
       />
     </span>
@@ -265,6 +265,10 @@ const priceCol = [
     filter: true,
     resizable: true,
     flex: 1,
+    editable: (params) => {
+      return params.data.price > 0;
+    },
+    cellRenderer: Editable,
   },
   {
     field: 'currency',

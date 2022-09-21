@@ -4,24 +4,24 @@ import React, {
   useCallback,
   useEffect,
   useMemo,
-} from 'react';
+} from "react";
 
-import { AgGridReact } from 'ag-grid-react';
+import { AgGridReact } from "ag-grid-react";
 
-import ActionMenu from './long';
-import AlertDialog from './popup';
-import Tooltip from './tooltip';
-import 'ag-grid-community/dist/styles/ag-grid.css';
-import 'ag-grid-community/dist/styles/ag-theme-material.css';
-import Loading from './loading';
-import '../style.css';
+import ActionMenu from "./long";
+import AlertDialog from "./popup";
+import Tooltip from "./tooltip";
+import "ag-grid-community/dist/styles/ag-grid.css";
+import "ag-grid-community/dist/styles/ag-theme-material.css";
+import Loading from "./loading";
+import "../style.css";
 
-import useWindowDimensions from '../hooks/dimension';
+import useWindowDimensions from "../hooks/dimension";
 
 const myHeaders = new Headers();
-myHeaders.append('Content-Type', 'application/json');
+myHeaders.append("Content-Type", "application/json");
 
-import { API } from '../config';
+import { API } from "../config";
 function ActionPopover(props) {
   return (
     <span>
@@ -48,32 +48,32 @@ export default function Ag({
   const onAction = useCallback((id) => {
     var raw = JSON.stringify({
       id: id,
-      status: 'approved',
+      status: "approved",
     });
     setShowmsg(true);
-    setMsg('Processing...');
+    setMsg("Processing...");
     var requestOptions = {
-      method: 'POST',
+      method: "POST",
       headers: myHeaders,
       body: raw,
-      redirect: 'follow',
+      redirect: "follow",
     };
 
     fetch(`${API}/review/approval/`, requestOptions)
       .then((response) => response.text())
       .then((result) => {
-        setMsg('Done...');
+        setMsg("Done...");
         setTimeout(() => {
           setShowmsg(false);
           refersh();
         }, 200);
       })
-      .catch((error) => console.log('error', error));
+      .catch((error) => console.log("error", error));
   }, []);
   const [columnDefs, setColumnDefs] = useState([
     ...colData,
     {
-      field: 'Action',
+      field: "Action",
       maxWidth: 100,
       cellRenderer: ActionPopover,
       cellRendererParams: { onClick: onAction },
@@ -86,7 +86,7 @@ export default function Ag({
     cacheBlockSize: 10,
   };
   const onGridReady = ({ api }) => setGridApi(api);
-  const [msg, setMsg] = useState('');
+  const [msg, setMsg] = useState("");
   const [showmsg, setShowmsg] = useState(false);
   useEffect(() => {
     if (!gridApi) {
@@ -96,7 +96,7 @@ export default function Ag({
       gridApi.setColumnDefs([
         ...colData,
         {
-          field: 'Action',
+          field: "Action",
           maxWidth: 100,
           cellRenderer: ActionPopover,
           cellRendererParams: { onClick: onAction },
@@ -149,7 +149,7 @@ export default function Ag({
 
   const loadingOverlayComponentParams = useMemo(() => {
     return {
-      loadingMessage: 'One moment please...',
+      loadingMessage: "One moment please...",
     };
   }, []);
 
@@ -157,46 +157,82 @@ export default function Ag({
     //console.log('cellClicked', API);
   }, []);
   const cellValueChangedListener = useCallback((event) => {
-    if(event.data.safetyStock > event.data.available) {
-      setShowmsg(true);
-      setMsg('Safety Stock can not be bigger then Available Stock');
-      setTimeout(() => {
-        setShowmsg(false);
-        refersh();
-      }, 2000);
-    } else {
-    const raw = JSON.stringify({
-      id: event.data.id,
-      safetyStock: event.data.safetyStock,
-    });
-    setShowmsg(true);
-    setMsg('Processing...');
-    const requestOptions = {
-      method: 'POST',
-      headers: myHeaders,
-      body: raw,
-      redirect: 'follow',
-    };
-
-    fetch(`${API}/stock/update`, requestOptions)
-      .then((response) => response.text())
-      .then((result) => {
-        setMsg('Done...');
+    if (event.colDef.field === "safetyStock") {
+      if (event.data.safetyStock > event.data.available) {
+        setShowmsg(true);
+        setMsg("Safety Stock can not be bigger then Available Stock");
         setTimeout(() => {
           setShowmsg(false);
           refersh();
-        }, 200);
-      })
-      .catch((error) => console.log('error', error));
+        }, 2000);
+      } else {
+        const raw = JSON.stringify({
+          id: event.data.id,
+          safetyStock: event.data.safetyStock,
+        });
+        setShowmsg(true);
+        setMsg("Processing...");
+        const requestOptions = {
+          method: "POST",
+          headers: myHeaders,
+          body: raw,
+          redirect: "follow",
+        };
+
+        fetch(`${API}/stock/update`, requestOptions)
+          .then((response) => response.text())
+          .then((result) => {
+            setMsg("Done...");
+            setTimeout(() => {
+              setShowmsg(false);
+              refersh();
+            }, 200);
+          })
+          .catch((error) => console.log("error", error));
+      }
+    } else if (event.colDef.field === "price") {
+      if (parseInt(event.data.price) <= 0) {
+        setShowmsg(true);
+        setMsg("Price can not be less then or equal to 0");
+        setTimeout(() => {
+          setShowmsg(false);
+          refersh();
+        }, 2000);
+      } else {
+        const raw = JSON.stringify({
+          id: event.data.id,
+          price: event.data.price,
+          product: event.data.product
+        });
+        setShowmsg(true);
+        setMsg("Processing...");
+        const requestOptions = {
+          method: "PUT",
+          headers: myHeaders,
+          body: raw,
+          redirect: "follow",
+        };
+
+        fetch(`${API}/price/update`, requestOptions)
+          .then((response) => response.text())
+          .then((result) => {
+            setMsg("Done...");
+            setTimeout(() => {
+              setShowmsg(false);
+              refersh();
+            }, 200);
+          })
+          .catch((error) => console.log("error", error));
+      }
     }
   }, []);
 
   return (
     <div
       className="ag-theme-material"
-      style={{ height: `${150 + height / 2}px`, width: '100%' }}
+      style={{ height: `${150 + height / 2}px`, width: "100%" }}
     >
-      {' '}
+      {" "}
       {showmsg && <AlertDialog msg={msg} />}
       <AgGridReact
         sideBar={true}
