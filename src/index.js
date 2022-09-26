@@ -208,12 +208,6 @@ const productCol = [
     flex: 1,
   },
   {
-    field: 'orderedStock',
-    filter: true,
-    resizable: true,
-    flex: 1,
-  },
-  {
     field: 'available',
     filter: true,
     resizable: true,
@@ -234,6 +228,13 @@ const productCol = [
     cellRenderer: Editable,
     width: 175,
     maxWidth: 175,
+  },
+  {
+    field: 'orderedStock',
+    filter: true,
+    resizable: true,
+    cellRenderer: StockCell,
+    flex: 1,
   },
   {
     field: 'calculatedStock',
