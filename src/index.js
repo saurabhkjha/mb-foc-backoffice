@@ -71,7 +71,7 @@ function MbRating(props) {
         name="read-only"
         value={props.value}
         readOnly
-        style={{ color: '#00ADEF', fontSize:'14px' }}
+        style={{ color: '#00ADEF', fontSize:'14px', marginTop: '15px' }}
       />
     </span>
   );
@@ -206,6 +206,8 @@ const productCol = [
     filter: true,
     resizable: true,
     flex: 1,
+    tooltipComponentParams: { bkColor: '#474747' },
+    tooltipField: 'baseStore',
   },
   {
     field: 'available',
